@@ -51,7 +51,7 @@ public class MainActivity extends FragmentActivity {
 			if (theMap != null) {
 				theMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
 				theMap.moveCamera(CameraUpdateFactory.newCameraPosition(CameraPosition
-						.fromLatLngZoom(krakow, 14.0f)));
+						.fromLatLngZoom(krakow, 12.0f)));
 			}
 		}
 	}
