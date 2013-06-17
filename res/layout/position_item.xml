@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+    
+    <TextView
+        android:id="@+id/position_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/position_item_name_label"
+		android:textIsSelectable="true" />
+    
+    <TextView
+        android:id="@+id/position_item_name_label"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@+id/position_item_name"
+        android:text="@string/name" />
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/position_item_name"
+	    android:layout_marginTop="5dp"
+	    android:baselineAligned="false"
+        android:orientation="horizontal" >
+    
+	    <RelativeLayout
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp" >
+	    
+		    <TextView
+		        android:id="@+id/position_item_latitude_label"
+		        android:layout_width="60dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignBaseline="@+id/position_item_latitude"
+		        android:text="@string/latitude" />
+	    
+		    <TextView
+		        android:id="@+id/position_item_latitude"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_toRightOf="@+id/position_item_latitude_label"
+		        android:textIsSelectable="true" />
+	        
+	    </RelativeLayout>
+    
+	    <RelativeLayout
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp" >
+	    
+		    <TextView
+		        android:id="@+id/position_item_longitude_label"
+		        android:layout_width="60dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignBaseline="@+id/position_item_longitude"
+		        android:text="@string/longitude" />
+	    
+		    <TextView
+		        android:id="@+id/position_item_longitude"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_toRightOf="@+id/position_item_longitude_label"
+		        android:textIsSelectable="true" />
+	        
+	    </RelativeLayout>
+	    
+	</LinearLayout>
+
+</RelativeLayout>
